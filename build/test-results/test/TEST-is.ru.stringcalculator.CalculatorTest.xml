@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="is.ru.stringcalculator.CalculatorTest" tests="8" skipped="0" failures="1" errors="0" timestamp="2017-10-11T20:32:55" hostname="DESKTOP-49SB562" time="0.005">
+<testsuite name="is.ru.stringcalculator.CalculatorTest" tests="8" skipped="0" failures="1" errors="0" timestamp="2017-10-11T20:37:38" hostname="DESKTOP-49SB562" time="0.005">
   <properties/>
   <testcase name="testNumbersGreaterThanThousand" classname="is.ru.stringcalculator.CalculatorTest" time="0.003">
-    <failure message="java.lang.AssertionError: expected:&lt;2&gt; but was:&lt;1002&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;2&gt; but was:&lt;1002&gt;
+    <failure message="java.lang.AssertionError: expected:&lt;2&gt; but was:&lt;1003&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;2&gt; but was:&lt;1003&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:743)
 	at org.junit.Assert.assertEquals(Assert.java:118)
