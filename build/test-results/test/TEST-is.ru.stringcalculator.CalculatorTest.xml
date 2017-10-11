@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="is.ru.stringcalculator.CalculatorTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-10-11T18:41:57" hostname="DESKTOP-49SB562" time="0.004">
+<testsuite name="is.ru.stringcalculator.CalculatorTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-10-11T18:43:11" hostname="DESKTOP-49SB562" time="0.003">
   <properties/>
-  <testcase name="testMultipleNumbers" classname="is.ru.stringcalculator.CalculatorTest" time="0.002"/>
+  <testcase name="testMultipleNumbers" classname="is.ru.stringcalculator.CalculatorTest" time="0.001"/>
   <testcase name="testTwoNumber" classname="is.ru.stringcalculator.CalculatorTest" time="0.0"/>
-  <testcase name="testNegativeNumber" classname="is.ru.stringcalculator.CalculatorTest" time="0.0"/>
+  <testcase name="testONegativeNumber" classname="is.ru.stringcalculator.CalculatorTest" time="0.0"/>
   <testcase name="testNewLine" classname="is.ru.stringcalculator.CalculatorTest" time="0.0"/>
   <testcase name="testEmpyString" classname="is.ru.stringcalculator.CalculatorTest" time="0.0"/>
   <testcase name="testOneNumber" classname="is.ru.stringcalculator.CalculatorTest" time="0.0"/>
