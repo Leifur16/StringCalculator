@@ -16,7 +16,7 @@ public class CalculatorTest {
 	}
 	
 	@Test
-	public void testTwoNumber() {
+	public void testTwoNumbers() {
 		assertEquals(3, Calculator.add("1,2"));
 	}
 	
@@ -33,13 +33,24 @@ public class CalculatorTest {
 		
 	@Test
 	public void testOneNegativeNumber() {
-	RuntimeException exception = null;
+		RuntimeException exception = null;
 		try {
 			Calculator.add("-1,2");
 		} catch (RuntimeException e) {
 			exception = e;
 		}
 		assertEquals("Negative not allowed: -1", exception.getMessage());
+	}
+	
+	@Test
+	public void testMultipleNegativeNumbers() {
+		RuntimeException exception = null;
+		try {
+			Calculator.add("-1,-2,-3,4");
+		} catch (RuntimeException e) {
+			exception = e;
+		}
+		assertEquals("Negative not allowed: -1,-2,-3", exception.getMessage());
 	}
 }
  
