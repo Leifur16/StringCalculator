@@ -1,0 +1,13 @@
+apply plugin: 'java'
+
+apply	plugin:	'application'
+				
+mainClassName	=	'is.ru.hugb.HelloWorld'
+				
+repositories {
+	mavenCentral()
+}
+				
+dependencies {
+	compile	'joda-time:joda-time:2.9.9'
+}
