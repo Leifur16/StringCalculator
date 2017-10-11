@@ -66,7 +66,7 @@ set CMD_LINE_ARGS=%*
 set CLASSPATH=%APP_HOME%\lib\StringCalculator.jar;%APP_HOME%\lib\junit-4.11.jar;%APP_HOME%\lib\hamcrest-core-1.3.jar
 
 @rem Execute StringCalculator
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %STRING_CALCULATOR_OPTS%  -classpath "%CLASSPATH%" is.ru.hugb.Calculator %CMD_LINE_ARGS%
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %STRING_CALCULATOR_OPTS%  -classpath "%CLASSPATH%" is.ru.hugb.HelloWorld %CMD_LINE_ARGS%
 
 :end
 @rem End local scope for the variables with windows NT shell

@@ -2,7 +2,7 @@ apply plugin: 'java'
 
 apply plugin: 'application'
 				
-mainClassName = 'is.ru.hugb.Calculator'
+mainClassName = 'is.ru.hugb.HelloWorld'
 				
 repositories {
 	mavenCentral()
@@ -10,5 +10,4 @@ repositories {
 				
 dependencies {
 	compile	'junit:junit:4.11'
-	compile 'hamcrest:core:1.3'
 }
