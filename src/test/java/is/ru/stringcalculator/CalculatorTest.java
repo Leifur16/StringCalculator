@@ -34,11 +34,11 @@ public class CalculatorTest {
 	@Test
 	public void testOneNegativeNumber() {
 	RuntimeException exception = null;
-    try {
-        Calculator.add("-1,2");
-    } catch (RuntimeException e) {
-        exception = e;
-    }
+		try {
+			Calculator.add("-1,2");
+		} catch (RuntimeException e) {
+			exception = e;
+		}
 		assertEquals("Negative not allowed: -1", exception.getMessage());
 	}
 }
