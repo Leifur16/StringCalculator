@@ -7,21 +7,10 @@ public class Calculator {
 			return 0;
 		else {
 			if(text.contains(",") || text.contains("\n")) {
-				String negativeNumbers = "";
 				String numbers[] = text.split(",|\n");
-					for(String number : numbers) {
-					
-					if(toInt(number) < 0){
-						negativeNumbers = negativeNumbers + number + ","; 
-					}
-				}
-				if(negativeNumbers.length() > 0) {
-					if(negativeNumbers.length() > 1)
-					{
-						 negativeNumbers = negativeNumbers.substring(0, negativeNumbers.length() - 1);
-					}
-					throw new RuntimeException("Negative not allowed: " + negativeNumbers);
-				}	
+				
+				negativeNumbersCheck(numbers);
+				
 				return sum(numbers);	
 			}	
 		}
@@ -38,5 +27,22 @@ public class Calculator {
 			total += toInt(number);
 		}
 		return total;
+	}
+	
+	private static void negativeNumbersCheck(String [] numbers) {
+		String negativeNumbers = "";
+		for(String number : numbers) {
+					
+			if(toInt(number) < 0){
+				negativeNumbers = negativeNumbers + number + ","; 
+			}
+		}
+		if(negativeNumbers.length() > 0) {
+			if(negativeNumbers.length() > 1)
+			{
+				 negativeNumbers = negativeNumbers.substring(0, negativeNumbers.length() - 1);
+			}
+			throw new RuntimeException("Negative not allowed: " + negativeNumbers);
+		}	
 	}
 }
