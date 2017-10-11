@@ -6,8 +6,18 @@ public class Calculator {
 		if(text == "")
 			return 0;
 		else {
-			if(text.contains(",") || text.contains("\n")) {
-				String numbers[] = text.split(",|\n");
+			String deliminator = ",";
+			if(text.length() >= 3) {
+				String fyrstTwo = text.substring(0,2);
+				if(fyrstTwo.equals("//")) {
+					deliminator = text.substring(2,3);
+					text = text.substring(4,text.length());
+				}
+			}
+			
+			if(text.contains(deliminator) || text.contains("\n")) {
+				String numbers[] = text.split(deliminator+"|\n");
+				
 				
 				negativeNumbersCheck(numbers);
 				
