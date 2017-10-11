@@ -32,7 +32,7 @@ public class CalculatorTest {
 	
 		
 	@Test
-	public void testONegativeNumber() {
+	public void testOneNegativeNumber() {
 	RuntimeException exception = null;
     try {
         Calculator.add("-1,2");
