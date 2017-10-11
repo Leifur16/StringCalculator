@@ -8,6 +8,11 @@ public class Calculator {
 		else {
 			if(text.contains(",") || text.contains("\n")) {
 				String numbers[] = text.split(",|\n");
+				for(String number : numbers) {
+					if(number < 0){
+						throw new IllegalArgumentException("Negative not allowed: " + number);
+					}
+				}
 				return sum(numbers);	
 			}	
 		}

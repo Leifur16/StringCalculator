@@ -33,7 +33,7 @@ public class CalculatorTest {
 		
 	@Test
 	public void testNegativeNumber() {
-		assertEquals("Negative not allowed " + "-1", Calculator.add("1,2,-3,4"));
+		assertEquals("Negative not allowed: " + "-3", Calculator.add("1,2,-3,4"));
 	}
 }
  
