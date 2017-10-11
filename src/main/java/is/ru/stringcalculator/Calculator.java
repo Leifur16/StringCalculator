@@ -3,8 +3,9 @@ package is.ru.stringcalculator;
 public class Calculator {
 	
 	public static int add(String text) {
+		int sum = 0;
 		if(text == "")
-			return 0;
+			return sum;
 		else {
 			String deliminator = ",";
 			if(text.length() >= 3) {
@@ -21,10 +22,13 @@ public class Calculator {
 				
 				negativeNumbersCheck(numbers);
 				
-				return sum(numbers);	
-			}	
+				sum = sum(numbers);	
+			}
+			else {
+				sum = Integer.parseInt(text);
+			}
 		}
-		return 1;
+		return sum;
 	}
 	
 	private static int toInt(String number) {
