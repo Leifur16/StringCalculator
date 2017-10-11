@@ -1,13 +1,14 @@
 apply plugin: 'java'
 
-apply	plugin:	'application'
+apply plugin: 'application'
 				
-mainClassName	=	'is.ru.hugb.HelloWorld'
+mainClassName = 'is.ru.hugb.Calculator'
 				
 repositories {
 	mavenCentral()
 }
 				
 dependencies {
-	compile	'joda-time:joda-time:2.9.9'
+	compile	'junit:junit:4.11'
+	compile 'hamcrest:core:1.3'
 }
